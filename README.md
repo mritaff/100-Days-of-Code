@@ -31,6 +31,7 @@ day02-tip-calculator/
 day03-treasure-island/
 ...
 day14-higher-or-lower/
+day15-coffee-machine/
 ```
 
 Each directory may contain: 
@@ -42,7 +43,7 @@ This structure is designed to scale easily as more days are added.
 
 ## Progress Status
 
-- Completed days: **1--14**
+- Completed days: **1--15**
 - Skipped days (no original projects): **6, 13**
 - Current status: **In progress**
 - Target completion: **Day 100 (or as close as possible)**
