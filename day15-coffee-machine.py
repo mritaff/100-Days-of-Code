@@ -31,7 +31,7 @@ resources = {
     "money": 0
 }
 
-def missing_resources(drink, resources, choice):
+def missing_resources(drink, resources):
     missing = []
     for ingredients, amount in drink["ingredients"].items():
         if amount > resources[ingredients]:
@@ -44,7 +44,7 @@ def payment(quarters, dimes, nickles, pennies, total):
     if value >= total:
         return value - total
     else:
-        return -1
+        return False
 
 while True:
     quarters = 0
@@ -55,7 +55,7 @@ while True:
     choice = input("What would you like? (espresso/latte/cappuccino): ").lower()
     if choice in MENU:
         drink = MENU[choice]
-        invalid = missing_resources(drink, resources, choice)
+        invalid = missing_resources(drink, resources)
 
         if len(invalid) > 0:
             if len(invalid) == 1:
@@ -71,7 +71,7 @@ while True:
             nickles = int(input("How many nickles? "))
             pennies = int(input("How many pennies? "))
             change = payment(quarters, dimes, nickles, pennies, total=drink["cost"])
-            if change == -1:
+            if change == False:
                 print("Sorry that's not enough money. Money refunded")
             else:
                 print(f"Here is {change: .2f} in change.")
