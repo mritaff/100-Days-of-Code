@@ -14,11 +14,11 @@ The primary objective of this repository is to consolidate my learning
 throughout the course by implementing the proposed projects while
 intentionally introducing modifications to the original solutions.
 
-Rather than strictly reproducing the instructor's code, I aim to: -
-Reinforce Python fundamentals through practice - Explore alternative
-approaches and logic - Apply small improvements, refactoring, or
-extensions to the projects - Maintain a clear record of my learning
-progression over time
+Rather than strictly reproducing the instructor's code, I aim to: 
+- Reinforce Python fundamentals through practice 
+- Explore alternative approaches and logic 
+- Apply small improvements, refactoring, or extensions to the projects 
+- Maintain a clear record of my learning progression over time
 
 ## Repository Structure
 
@@ -32,6 +32,7 @@ day03-treasure-island/
 ...
 day14-higher-or-lower/
 day15-coffee-machine/
+day16-oop-coffee-machine/
 ```
 
 Each directory may contain: 
