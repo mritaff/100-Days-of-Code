@@ -52,7 +52,24 @@ This section will be updated continuously throughout the course.
 
 -   Python 3
 -   Standard Python libraries
--   Terminal-based applications (for early-stage projects)
+-   External Libraries (varies by project)
+
+## Getting Started
+
+### Prerequisites
+- Python 3.x installed on your machine
+
+### Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/mritaff/100-Days-of-Code.git
+cd 100-Days-of-Code
+```
+2. Install the required dependencies (for projects using external libraries):
+```bash
+pip install -r requirements.txt
+```
 
 ## Future Development
 
