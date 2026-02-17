@@ -5,6 +5,7 @@ is_race_over = False
 
 screen = Screen()
 screen.setup(1280, 720)
+screen.title("Turtle Race")
 
 race = TurtleRace()
 

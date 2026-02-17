@@ -13,6 +13,7 @@ t.hideturtle()
 
 screen = Screen()
 screen.colormode(255)
+screen.title("Hirst painting")
 
 height = screen.window_height()
 width = screen.window_width()
