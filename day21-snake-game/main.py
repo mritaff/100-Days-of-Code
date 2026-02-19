@@ -3,6 +3,7 @@ import time
 from snake import Snake
 from food import Food
 from scoreboard import ScoreBoard
+from border import Border
 
 screen = Screen()
 screen.setup(600, 600)
@@ -10,16 +11,7 @@ screen.bgcolor("black")
 screen.title("The Snake Game")
 screen.tracer(0)
 
-border_pen = Turtle()
-border_pen.hideturtle()
-border_pen.pencolor("red")
-border_pen.penup()
-border_pen.goto(-260, -260)
-border_pen.pendown()
-for i in range (4):
-    border_pen.forward(520)
-    border_pen.left(90)
-
+border = Border()
 snake = Snake()
 food = Food()
 score = ScoreBoard()
@@ -32,7 +24,7 @@ screen.onkey(key="Left", fun=snake.move_left)
 screen.onkey(key="Down", fun=snake.move_down)
 screen.onkey(key="Right", fun=snake.move_right)
 
-score.message()
+score.display_score()
 
 while game_is_on:
     screen.update()

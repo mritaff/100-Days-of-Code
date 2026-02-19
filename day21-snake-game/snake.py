@@ -31,9 +31,10 @@ class Snake:
             self.body_parts.append(new_body_part)
     
     def increase_size(self):
-        self.tail = len(self.body_parts) - 1
-        xcor_end = self.body_parts[self.tail].xcor()
-        ycor_end = self.body_parts[self.tail].ycor()
+        last_part = len(self.body_parts) - 1
+        xcor_end = self.body_parts[last_part].xcor()
+        ycor_end = self.body_parts[last_part].ycor()
+        
         new_body_part = Turtle(shape="square")
         new_body_part.penup()
         new_body_part.goto(xcor_end, ycor_end)
