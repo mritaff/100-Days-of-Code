@@ -1,2 +1,5 @@
 # Day 18 - Hirst Painting
 colorgrampy==1.2.0
+
+# Day 25
+pandas==2.3.3
