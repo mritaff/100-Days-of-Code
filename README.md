@@ -2,7 +2,7 @@
 
 This repository documents my personal progress in the course **"100 Days of Code: The Complete Python Pro Bootcamp"**, instructed by **Angela Yu**.
 
-It contains the source code of projects developed from **Day 1 to Day 24**, with the exception of **Day 6** and **Day 13**, which do not include projects in the original course curriculum.
+It contains the source code of projects developed from **Day 1 to Day 25**, with the exception of **Day 6** and **Day 13**, which do not include projects in the original course curriculum.
 
 ## Overview
 
@@ -27,6 +27,7 @@ day02-tip-calculator/
 day03-treasure-island/
 ...
 day24-snake-game-high-score/
+day25-states-game/
 ```
 
 Each directory may contain: 
