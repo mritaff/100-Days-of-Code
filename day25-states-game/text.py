@@ -11,7 +11,7 @@ class Text(Turtle):
     def display_state(self, user_choice):
         x, y = self.logic.state_location(user_choice.lower())
         self.goto(x, y)
-        self.write(f"{user_choice.capitalize()}", align="center", font=("Arial", 15, "normal"))
+        self.write(f"{user_choice.capitalize()}", align="center", font=("Arial", 12, "normal"))
 
     def win_message(self):
         self.home()
