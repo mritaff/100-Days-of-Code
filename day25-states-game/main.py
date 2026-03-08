@@ -23,8 +23,13 @@ screen.onkey(key="Escape", fun=exit_game)
 game_is_on = True
 while game_is_on:
     user_choice = screen.textinput(f"{logic.score}/27", "Type a state!")
+    
+    if user_choice.lower() == "exit":
+        exit_game()
+    
     if user_choice.lower() in logic.options and user_choice.lower() in logic.choices:
         continue
+    
     if user_choice.lower() in logic.options:
         logic.increase_score()
         logic.answers(user_choice.lower())
